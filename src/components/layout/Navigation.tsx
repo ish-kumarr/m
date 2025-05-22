@@ -93,14 +93,14 @@ export function Navigation(props: NavigationProps) {
               >
                 <BrandPill clickable header />
               </Link>
-              <a
+              {/* <a
                 href={conf().DISCORD_LINK}
                 target="_blank"
                 rel="noreferrer"
                 className="text-xl text-white tabbable rounded-full"
               >
                 <IconPatch icon={Icons.DISCORD} clickable downsized />
-              </a>
+              </a> */}
               <a
                 onClick={() => handleClick("/discover")}
                 rel="noreferrer"
@@ -110,9 +110,9 @@ export function Navigation(props: NavigationProps) {
               </a>
             </div>
             <div className="relative pointer-events-auto">
-              <LinksDropdown>
+              {/* <LinksDropdown>
                 {loggedIn ? <UserAvatar withName /> : <NoUserAvatar />}
-              </LinksDropdown>
+              </LinksDropdown> */}
             </div>
           </div>
         </div>
